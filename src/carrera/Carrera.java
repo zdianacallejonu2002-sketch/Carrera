@@ -23,9 +23,6 @@ public class Carrera {
         for(int i = 0; i < nVueltas; i++) {
             this.coche1.acelerar(Math.random() * 200);
             this.coche2.acelerar(Math.random() * 200);
-
-            System.out.println(coche1.getKm());
-            System.out.println(coche2.getKm());
         }
 
         if(this.coche1.getKm() >= this.kmTotales) {
@@ -43,9 +40,6 @@ public class Carrera {
         while(this.coche1.getKm() < this.kmTotales && this.coche2.getKm() < this.kmTotales) {
             this.coche1.acelerar(Math.random() * 200);
             this.coche2.acelerar(Math.random() * 200);
-
-            System.out.println("coche1 - " + coche1.getKm());
-            System.out.println("coche2 - " + coche2.getKm());
         }
 
         if(this.coche1.getKm() >= this.kmTotales) {
@@ -59,7 +53,7 @@ public class Carrera {
     }
 
     private void mostrarGanador() {
-        System.out.println("El ganador ha sido el coche con matrÃ­cula " + this.ganador.getMatricula());
+        System.out.println("El ganador ha sido el coche con matricula " + this.ganador.getMatricula());
     }
 
     public Coche getCoche1() {
